@@ -3,10 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google fonts - Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Google icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
     <link rel="stylesheet" href="../../dist/css/style.css">
     <title>To do list app</title>
 </head>
-<body>
-    <h3>Hello World</h3>
+<body class="flex gap-6 bg-light-gray min-h-screen p-6">
+    <aside class="container w-[300px] min-h-full">
+        <h1 class="font-extrabold">BetterTasks</h2>
+        <section>
+            <h4 class="py-4 font-semibold text-dark-gray">MAIN MENU</h4>
+            <nav class="navbar">
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#">
+                            <span class="navbar__icon material-symbols-outlined">list_alt_check</span>
+                            To do
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#">
+                            <span class="navbar__icon material-symbols-outlined">campaign</span>
+                            Share My Impact
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#">
+                            <span class="navbar__icon material-symbols-outlined">analytics</span>
+                            Analytics
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#">
+                            <span class="navbar__icon material-symbols-outlined">leaderboard</span>
+                            Leaderboard
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section>
+            <h4 class="py-4 font-semibold text-dark-gray">LISTS</h4>
+        </section>
+    </aside>
+    <main>
+        <section class="container flex justify-between w-[1000px]">
+            <div class="flex flex-col gap-2">
+                <h1 class="font-bold">Good Morning, User!</h1>
+                <p class="text-sm font-semibold text-dark-gray">What do you plan to do today?</p>
+            </div>
+            <div class="flex flex-col gap-2">
+                <div>
+                    <div>
+                        <div></div>
+                    </div>
+                </div>
+                <p class="text-sm font-semibold text-dark-gray">What do you plan to do today?</p>
+            </div>
+        </section>
+    </main>
+    <aside>
+        <section>
+            <h1>Focus Mode</h1>
+        </section>
+    </aside>
 </body>
 </html>
