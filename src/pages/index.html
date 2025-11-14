@@ -24,7 +24,7 @@
                 <ul class="navbar__menu">
                     <li class="navbar__item">
                         <a class="navbar__link" href="#">
-                            <span class="navbar__icon material-symbols-outlined">list_alt_check</span>
+                            <span class="material-symbols-outlined navbar__icon">list_alt_check</span>
                             To do
                         </a>
                     </li>
@@ -53,26 +53,92 @@
             <h4 class="py-4 font-semibold text-dark-gray">LISTS</h4>
         </section>
     </aside>
-    <main>
-        <section class="container flex justify-between w-[1000px]">
+    <main class="flex  flex-col gap-6 w-[1000px]">
+        <section class="container">
             <div class="flex flex-col gap-2">
                 <h1 class="font-bold">Good Morning, User!</h1>
                 <p class="text-sm font-semibold text-dark-gray">What do you plan to do today?</p>
             </div>
-            <div class="flex flex-col gap-2">
-                <div>
-                    <div>
-                        <div></div>
+        </section>
+        <section class="container">
+            <h1 class="font-bold">Today's Task</h1>
+            <div>
+                <div class="task">
+                    <input class="task__checkbox" type="checkbox" name="" id="">
+                    <div class="task__label">
+                        <div class="task__category">
+                            <span class="material-symbols-outlined">notes</span>
+                            <p>Programming</p>
+                        </div>
+                        <h4 class="task__tittle">Create To Do List Web</h4>
+                    </div>
+                    <div class="task__priority">
+                        <div class="priority_label high">
+                            <span class="dot_icon high"></span>
+                            <span>High</span>
+                        </div>
+                    </div>
+                    <div class="task__change_priority">
+                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                    </div>
+                    <div class="task__delete">
+                        <span class="material-symbols-outlined">delete</span>
                     </div>
                 </div>
-                <p class="text-sm font-semibold text-dark-gray">What do you plan to do today?</p>
+                <div class="task">
+                    <input class="task__checkbox" type="checkbox" name="" id="">
+                    <div class="task__label">
+                        <div class="task__category">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="icon">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                            </svg>
+                            <p>Programming</p>
+                        </div>
+                        <h4 class="task__tittle">Create To Do List Web</h4>
+                    </div>
+                    <div class="task__priority">
+                        <div class="priority_label medium">
+                            <span class="dot_icon medium"></span>
+                            <span>Medium</span>
+                        </div>
+                    </div>
+                    <div class="task__change_priority">
+                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                    </div>
+                    <div class="task__delete">
+                        <span class="material-symbols-outlined">delete</span>
+                    </div>
+                </div>
+                <div class="task">
+                    <input class="task__checkbox" type="checkbox" name="" id="">
+                    <div class="task__label">
+                        <div class="task__category">
+                            <span class="material-symbols-outlined">notes</span>
+                            <p>Programming</p>
+                        </div>
+                        <h4 class="task__tittle">Create To Do List Web</h4>
+                    </div>
+                    <div class="task__priority">
+                        <div class="priority_label low">
+                            <span class="dot_icon low"></span>
+                            <span>Low</span>
+                        </div>
+                    </div>
+                    <div class="task__change_priority">
+                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                    </div>
+                    <div class="task__delete">
+                        <span class="material-symbols-outlined">delete</span>
+                    </div>
+                </div>
+                <div class="my-4">
+                    <button class="add_task">
+                        <span class="material-symbols-outlined">add</span>
+                        Add Task
+                    </button>
+                </div>
             </div>
         </section>
     </main>
-    <aside>
-        <section>
-            <h1>Focus Mode</h1>
-        </section>
-    </aside>
 </body>
 </html>
